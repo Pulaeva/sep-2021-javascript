@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Lesson_2</title>
+</head>
+<body>
+
+<script>
+
+    let time = prompt('Яка це хвилина?');
+    if (time > 0 && time <=15 ) {
+    document.write('<h1>Перша</h1>')
+    } if (time > 15 && time <=30) {
+        document.write('<h1>Друга</h1>')
+    } if (time > 30 && time <=45 ) {
+    document.write('<h1>Третя</h1>')
+    } if (time >45 && time <= 59) {
+    document.write('<h1>Четверта</h1>')
+    }
+
+
+let day = prompt('Який це день місяця?');
+let dataday = day / 10;
+console.log(Math.ceil(dataday), "декада");
+
+
+let test = 'qwert';
+if (test !== true) {
+    console.log('Вірно')
+} else {
+    console.log('Неправильно')
+}
+(test !== true) ? console.log('Вірно') : console.log('Невірно')
+
+
+let a = +prompt('Введіть число 1, 0, -3');
+if (a !== 0){
+    console.log('Вірно')
+} else {
+    console.log('Невірно')
+}
+
+
+let planfortheWeek = +prompt('Введіть порядковий номер дня тижня')
+switch (planfortheWeek) {
+    case 1:
+        console.log("У понеділок зранку треба відвести дітей до садочка і школи, піти з чоловіком на процедуру, в обід індивідуальне заняття з учнем,потім забрати дітей зі школи та садочка, прослухати лекцію з програмування");
+        break;
+    case 2:
+        console.log("У вівторок зранку треба відвести дітей до садочка і школи, потім заняття з учнями в центрі, далі забрати дітей зі школи та садочка");
+        break;
+    case 3:
+        console.log("У середу зранку треба відвести дітей до садочка і школи, потім здати аналізи, далі заняття з учнями в центрі, ще одне індивідуальне заняття, потім забрати дітей зі школи та садочка, прослухати лекцію з програмування");
+        break;
+    case 4:
+        console.log("У четвер зранку треба відвести дітей до садочка і школи, далі заняття з учнями в центрі, потім забрати дітей зі школи та садочка");
+        break;
+    case 5:
+        console.log("У п'ятницю  зранку треба відвести дітей до садочка і школи, потім заняття з учнями в центрі, далі забрати дітей зі школи та садочка, прослухати лекцію з програмування");
+        break;
+    case 6:
+        console.log("У суботу підготуватися до англійської мови, підвідати заняття, відпочити");
+        break;
+    case 7:
+        console.log("У неділю зробити покупки на наступний тиждень, зготувати смачну вечерю, доробити домашнє завдання");
+        break;
+    default:
+            console.log('default')
+}
+
+
+        let year = +prompt('Який рік високосний?');
+    let result = year % 4;
+    if (result ===0) {
+        document.write('<h1>Цей рік високосний</h1>');
+    } else {
+        document.write('<h1>Цей рік не високосний</h1>');
+    }
+
+
+let title = prompt("Яка «офіційна» назва JavaScript?");
+if (title == "ECMAScript") {
+    document.write("<h1>Правильно!</h1>" );
+    } else {
+    document.write('<h1>Не знаєте? ECMAScript!</h1>');
+}
+
+
+</script>
+</body>
+</html>
