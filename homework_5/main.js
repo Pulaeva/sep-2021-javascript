@@ -22,34 +22,26 @@ for (let i = 0; i < array.length; i ++){
 receiveArray(array);
 
 
-function dataP (text) {
-    document.write(`<p>${'По выражению одного из основателей языков программирования Никлауса Вирта, «Программы = алгоритмы + структуры данных». '}</p>`)
-    document.write(`<p>${'По выражению одного из основателей языков программирования Никлауса Вирта, «Программы = алгоритмы + структуры данных». '}</p>`)
-for (let i=0; i<= 4; i++){
-    document.write(`<p> ${i} - ${'По выражению одного из основателей языков программирования Никлауса Вирта, «Программы = алгоритмы + структуры данных».'} </p>`)
+let dataP = (text = 'По выражению одного из основателей языков программирования Никлауса Вирта, «Программы = алгоритмы + структуры данных».') => {
+    document.write(`<p> ${text} </p>`)
 }
+dataP()
+
+
+const createUl = (text) => {
+    document.write(`<ul><li>${text}</li><li>${text}</li><li>${text}</li></ul>`)
 }
-dataP('some text')
+createUl('Программирование основывается на использовании языков программирования, на которых записываются исходные тексты программ');
 
 
-function createUl(text) {
-    document.write(`<ul>`)
-    document.write(`<li>${text}</li>`)
-    document.write(`<li>${text}</li>`)
-    document.write(`<li>${text}</li>`)
-    document.write(`</ul>`)
-}
-createUl('Программирование основывается на использовании языков программирования, на которых записываются исходные тексты программ', 3);
-
-
-function createUl2(text, size) {
+const createUl2 = (text, size) => {
     document.write(`<ul>`)
     for (let i = 0; i <= size; i++) {
         document.write(`<li>${text}</li>`);
     }
     document.write(`</ul>`)
 }
-createUl2('Программирование основывается на использовании языков программирования', 5);
+createUl2('Программирование основывается на использовании языков программирования', 3);
 
 
 let someArray = ['Natalia Pylaeva', 16.12, 'Ivan Rudenko', 1967, true,];
